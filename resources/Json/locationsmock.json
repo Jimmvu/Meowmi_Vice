@@ -1,0 +1,60 @@
+[
+  {
+    "roomName": "Kitchen",
+    "roomDescription": "room description",
+    "roomDirections": {"north": "Backyard", "east": "Living Room"},
+    "roomClue": {"name": "clue name", "description": "clue description", "item": {"name": "item name", "description": "item description"}},
+    "roomNpc": {"name": "npc name", "dialogue": "npc dialogue"}
+  },
+  {
+    "roomName": "Backyard",
+    "roomDescription": "room description",
+    "roomDirections": {"south": "Kitchen"},
+    "roomClue": {"name": "clue name", "description": "clue description", "item": {"name": "item name", "description": "item description"}},
+    "roomNpc": {"name": "npc name", "dialogue": "npc dialogue"}
+  },
+  {
+    "roomName": "Living Room",
+    "roomDescription": "room description",
+    "roomDirections": {"up": "Hallway", "west": "Kitchen"},
+    "roomClue": {"name": "clue name", "description": "clue description", "item": {"name": "item name", "description": "item description"}},
+    "roomNpc": {"name": "npc name", "dialogue": "npc dialogue"}
+  },
+  {
+    "roomName": "Basement",
+    "roomDescription": "room description",
+    "roomDirections": {"up": "Living Room"},
+    "roomClue": {"name": "clue name", "description": "clue description", "item": {"name": "item name", "description": "item description"}},
+    "roomNpc": {"name": "npc name", "dialogue": "npc dialogue"}
+  },
+  {
+    "roomName": "Hallway",
+    "roomDescription": "room description",
+    "roomDirections": {"down": "Living Room", "east": "Bedroom", "north": "Restroom"},
+    "roomClue": {"name": "clue name", "description": "clue description", "item": {"name": "item name", "description": "item description"}},
+    "roomNpc": {"name": "npc name", "dialogue": "npc dialogue"}
+  },
+  {
+    "roomName": "Bedroom",
+    "roomDescription": "room description",
+    "roomDirections": {"west": "Hallway"},
+    "roomClue": {"name": "clue name", "description": "clue description", "item": {"name": "item name", "description": "item description"}},
+    "roomNpc": {"name": "npc name", "dialogue": "npc dialogue"}
+  },
+  {
+    "roomName": "Restroom",
+    "roomDescription": "room description",
+    "roomDirections": {"south": "Hallway", "east": "Guest Room"},
+    "roomClue": {"name": "clue name", "description": "clue description", "item": {"name": "item name", "description": "item description"}},
+    "roomNpc": {"name": "npc name", "dialogue": "npc dialogue"}
+  },
+  {
+    "roomName": "Guest Room",
+    "roomDescription": "room description",
+    "roomDirections": {"west": "Basement"},
+    "roomClue": {"name": "clue name", "description": "clue description", "item": {"name": "item name", "description": "item description"}},
+    "roomNpc": {"name": "npc name", "dialogue": "npc dialogue"}
+  }
+
+]
+
