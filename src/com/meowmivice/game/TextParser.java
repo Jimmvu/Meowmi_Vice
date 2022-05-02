@@ -53,11 +53,11 @@ class TextParser {
     }
 
     static List<String> validAudio(){
-        return new ArrayList<>(Arrays.asList("stop", "play"));
+        return new ArrayList<>(Arrays.asList("stop", "play", "pause", "unpause"));
     }
 
     private static List<String> verbs(){
-        return new ArrayList<>(Arrays.asList("go", "stop", "play", "pick up", "take", "get", "grab", "obtain", "acquire", "look", "talk", "move", "run", "walk", "solve", "quit", "command", "help", "aid", "assist", "assistance", "commands", "restart", "q", "exit", "leave", "answer", "resolve", "decipher", "decode", "guess", "inspect", "examine", "view", "review", "search", "study", "canvass", "speak", "communicate", "chat", "interact", "gossip", "replay", "renew", "redo", "reset", "reboot"));
+        return new ArrayList<>(Arrays.asList("go", "stop", "play","pause", "unpause", "pick up", "take", "get", "grab", "obtain", "acquire", "look", "talk", "move", "run", "walk", "solve", "quit", "command", "help", "aid", "assist", "assistance", "commands", "restart", "q", "exit", "leave", "answer", "resolve", "decipher", "decode", "guess", "inspect", "examine", "view", "review", "search", "study", "canvass", "speak", "communicate", "chat", "interact", "gossip", "replay", "renew", "redo", "reset", "reboot"));
     }
 
     static List<String> textParser(String input) {

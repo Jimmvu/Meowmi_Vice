@@ -2,6 +2,9 @@ package com.meowmivice.game;
 import com.apps.util.Console;
 import com.apps.util.Prompter;
 import org.json.simple.JSONObject;
+
+import javax.sound.sampled.*;
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -32,6 +35,7 @@ class Game {
 
     void execute() throws Exception {
         boolean runGame = true;
+        Audio.audio();
         welcome();
         createPlayer();
         promptToPlay();
@@ -63,6 +67,16 @@ class Game {
             help();
         } else if(restart.contains(textParser.get(0))){
             restart();
+        } else if(audio.contains(textParser.get(0))){
+            audio(textParser.get(0));
+        }
+    }
+
+    private void audio(String input) throws UnsupportedAudioFileException, LineUnavailableException, IOException {
+        if ("stop".equals(input) || "pause".equals(input)){
+            Audio.pauseAudio();
+        } else if("play".equals(input) || "unpause".equals(input)) {
+            Audio.resumeAudio();
         }
     }
 
